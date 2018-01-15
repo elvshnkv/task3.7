@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Заголовок</title>
+</head>
+<body>
+	<div id="content">
+		<header>
+			<div class="container">
+				<ul class="menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>	
+			</div>	
+		</header>
+		<div class="container">
+			<form id="form">
+				<p><input type="text" name="yname" placeholder="Введите Ваше имя" /></p>
+				<p><input type="password" name="password" placeholder="Введите пароль" /></p>
+				<p><input type="password" name="password2" placeholder="Подтвердите пароль" /></p>
+				<p><input type="number" name="age" placeholder="Введите ваш возраст" /></p>
+				<p>
+					<input type="text" class="email" name="email" placeholder="Введите Ваш email" />	
+					<a onclick="newEmail(this.parentNode)" href="#" id="email">Добавить email</a>		
+				</p>
+				<input type="button" name="button" onclick="validate(this.form)" value="Зарегистрировать" />
+			</form>
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
